@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+
+.research-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.spacer {
+  height: 50px;
+}
+
+section {
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+
+.spacer-2 {
+  height: 25px;
+}
+
+.responsive-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.responsive-footer p {
+  margin: 0;
+  text-align: center;
+}
+
+heading {
+  display: block;
+  text-align: center;
+}
+
+/* OR applying to specific elements */
+h1 {
+    font-family: 'Ubuntu';
+    font-weight: 700px;
+    font-size: 30px;
+  }
+
+ /* OR applying to specific elements */
+h2, h3,p, li, em, papertitle {
+  font-family: 'Ubuntu';
+}
+
+.centresection  {
+  text-align: center;
+}
+
+
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: right;
+
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #043f79;
+}
+
+/* Additional Styles for a Futuristic Look */
+nav {
+  font-family: 'Lato', sans-serif;
+  padding: 15px 0;  /* Adjusted padding for vertical centering */
+
+}
+
+#logo-text {
+  margin-right: auto;
+}
+
+#logo-text a {
+  font-size: 25px; /* or whatever size you want for the text */
+  font-weight: bold; /* optional, for bold text */
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 20px
+}
+
+
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 1500;  /* So it's above the nav */
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 2px 0;
+  transition: 0.4s;
+}
+
+
+
+
+/* Show burger icon on smaller screens */
+@media only screen and (max-width: 768px) {
+
+  nav {
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2); /* Lowered shadow */
+
+  }
+
+  iframe {
+    width: 100%;
+    max-width: 800px; /* or whatever max width suits your design */
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .responsive-footer p {
+      font-size: 16px; /* adjust as needed */
+  }
+
+  
+
+.menu-toggle {
+  display: flex;
+}
+
+nav ul {
+    display: none;  /* Hide main menu items by default */
+}
+
+nav.active ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    top: 60px;
+    right: 0;
+    width: 100%;
+}
+
+nav ul li {
+    margin-right: 0;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul li:last-child {
+    border-bottom: none;
+}
+
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #043f79;
+}
+
+.publications {
+  margin: 0 auto;
+  width: 80%;
+  text-align: left;
+}
+.publication {
+  margin-bottom: 20px;
+}
+
+.publication-title {
+  font-weight: bold;
+}
+.publication-authors, .publication-date {
+  font-style: italic;
+}
+.publication-link {
+  text-decoration: none;
+}
+
+.publications ul {
+    list-style-type: none;
+    padding: 0;
+}
+

@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+
+
+.spacer {
+  height: 50px;
+}
+
+section {
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+
+.spacer-2 {
+  height: 25px;
+}
+
+.responsive-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.responsive-footer p {
+  margin: 0;
+  text-align: center;
+}
+
+heading {
+  display: block;
+  text-align: center;
+}
+
+/* OR applying to specific elements */
+h1 {
+    font-family: 'Ubuntu';
+    font-weight: 700px;
+    font-size: 30px;
+  }
+
+ /* OR applying to specific elements */
+h2, h3, p, li, em, papertitle {
+  font-family: 'Ubuntu';
+}
+
+p, li, em {
+  font-family: 'Cardo';
+}
+
+.centresection  {
+  text-align: center;
+}
+
+
+/* Mobile specific styles */
+@media only screen and (max-width: 768px) {
+  table {
+width: 100%;
+margin: 0;
+padding: 0;
+border-collapse: collapse;  /* This will remove any spacing between cells */
+}
+
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: right;
+
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #043f79;
+}
+
+/* Additional Styles for a Futuristic Look */
+nav {
+  font-family: 'Lato', sans-serif;
+  padding: 15px 0;  /* Adjusted padding for vertical centering */
+
+}
+
+#logo-text {
+  margin-right: auto;
+}
+
+#logo-text a {
+  font-size: 25px; /* or whatever size you want for the text */
+  font-weight: bold; /* optional, for bold text */
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 20px
+}
+
+/* Burger Icon Styles */
+#burger-icon {
+  display: none; /* hide by default */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  right: 20px; /* adjust as needed */
+  top: 20px; /* adjust as needed */
+}
+
+
+/* Burger Icon Styles */
+#burger-icon {
+  /* ... other styles ... */
+  top: 15px;  /* Adjusted to fit within the nav bar */
+  right: 15px;  /* Adjusted to fit within the nav bar */
+}
+
+/* Show burger icon on smaller screens */
+@media only screen and (max-width: 768px) {
+  #burger-icon {
+      display: flex;
+  }
+
+  #nav-links {
+      display: none; /* hide nav items */
+      flex-direction: column;
+  }
+
+  #nav-links.show {
+      display: flex;
+  }
+}
+
+
+/* Show burger icon on smaller screens */
+@media only screen and (max-width: 768px) {
+  #burger-icon {
+      display: flex;
+      margin-left: auto;  /* Aligns to the right within the nav */
+  }
+
+  nav {
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);  /* Lowered shadow */
+  }
+
+
+  #nav-links.show {
+      display: flex;
+  }
+
+
+
+  #nav-links {
+      display: none; /* hide nav items */
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #fff;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      padding: 20px; /* Adjust padding as needed */
+      box-sizing: border-box; /* Ensure padding is included in element's dimensions */
+  }
+
+
+  #nav-links li {
+      width: 100%; /* Optional: makes each li take the full width of the ul */
+      padding: 10px; /* Adjust padding as needed */
+      box-sizing: border-box; /* Ensure padding is included in element's dimensions */
+  }
+
+  #nav-links li a {
+      width: 100%; /* Optional: makes each a tag take the full width of the li */
+      text-align: center; /* Centers text within each nav item */
+  }
+}
+
+/* ... rest of your styles ... */
